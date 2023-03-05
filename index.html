@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>VacaPlace | Visit the best places in the World!</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="assets/Vacaplace-logo.png" alt="Logo" class="logo" />
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search places"
+          />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="assets/sprite.svg#icon-magnifier"></use>
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="assets/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">1</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="assets/sprite.svg#icon-comments"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__user">
+            <img
+              src="assets/user.jpg"
+              alt="User photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Elvis</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a class="side-nav__link" href="#">
+                <svg class="side-nav__icon">
+                  <use xlink:href="assets/sprite.svg#icon-globe"></use>
+                </svg>
+                <span class="side-nav__descr">Place</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="#">
+                <svg class="side-nav__icon">
+                  <linearGradient id="my-cool-gradient" x2="0.4" y2="1">
+                    <stop offset="30%" stop-color="var(--color-accent)" />
+                    <stop offset="50%" stop-color="var(--color-blue-primary)" />
+                  </linearGradient>
+
+                  <use xlink:href="assets/sprite.svg#icon-plane"></use>
+                </svg>
+                <span class="side-nav__descr">Flight</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="#">
+                <svg class="side-nav__icon">
+                  <use xlink:href="assets/sprite.svg#icon-diamond"></use>
+                </svg>
+                <span class="side-nav__descr">Special</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="#">
+                <svg class="side-nav__icon">
+                  <use xlink:href="assets/sprite.svg#icon-direction"></use>
+                </svg>
+                <span class="side-nav__descr">Activities</span>
+              </a>
+            </li>
+          </ul>
+          <div class="copy">&copy; 2023 by Vacaplace. All rights reserved.</div>
+        </nav>
+
+        <main class="place-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                class="gallery__photo"
+                src="assets/img1.jpg"
+                alt="tour image 1"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                class="gallery__photo"
+                src="assets/img2.jpg"
+                alt="tour image 2"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                class="gallery__photo"
+                src="assets/img3.jpg"
+                alt="tour image 3"
+              />
+            </figure>
+          </div>
+          <div class="overview">
+            <h1 class="overview__heading">Socotra Island</h1>
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use xlink:href="assets/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="assets/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="assets/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="assets/sprite.svg#icon-star-full"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="assets/sprite.svg#icon-star-half"></use>
+              </svg>
+            </div>
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xlink:href="assets/sprite.svg#icon-location"></use>
+              </svg>
+              <button class="btn-inline">Yemen, Western Asia</button>
+            </div>
+            <div class="overview__rating">
+              <div class="overview__rating-average">9.1</div>
+              <div class="overview__rating-count">513 visitors</div>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Socotra Island is an otherworldly paradise with surreal
+                landscapes and a diverse ecosystem found nowhere else on earth.
+                Its unique flora and fauna make it a dream destination for
+                nature enthusiasts seeking a truly one-of-a-kind experience.
+              </p>
+              <p class="paragraph">
+                Socotra offers diverse activities, from exploring the
+                UNESCO-protected national park to diving in crystal-clear waters
+                and trekking to breathtaking viewpoints.
+              </p>
+              <ul class="list">
+                <li class="list__item">
+                  Hiking and trekking through stunning landscapes.
+                </li>
+                <li class="list__item">
+                  Diving in crystal-clear waters and exploring coral reefs.
+                </li>
+                <li class="list__item">
+                  Camping under the stars and experiencing the island's
+                  ecosystem.
+                </li>
+                <li class="list__item">
+                  Visiting local villages and learning about the culture of the
+                  island's inhabitants.
+                </li>
+                <li class="list__item">
+                  Exploring the national park and marine reserve.
+                </li>
+                <li class="list__item">
+                  Spotting endemic species of plants and animals found only on
+                  Socotra.
+                </li>
+                <li class="list__item">
+                  Relaxing on secluded beaches and enjoying the island's
+                  peaceful atmosphere.
+                </li>
+                <li class="list__item">
+                  Embarking on an off-the-beaten-path adventure like no other.
+                </li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend__count">
+                  James B. and 3 other friends recommend this place.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    class="recommend__photo"
+                    src="assets/friend_1.jpg"
+                    alt="friend_photo_1"
+                  />
+                  <img
+                    class="recommend__photo"
+                    src="assets/friend_2.jpg"
+                    alt="friend_photo_2"
+                  />
+                  <img
+                    class="recommend__photo"
+                    src="assets/friend_3.jpg"
+                    alt="friend_photo_3"
+                  />
+                  <img
+                    class="recommend__photo"
+                    src="assets/friend_4.jpg"
+                    alt="friend_photo_4"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  "Socotra is an amazing place. I highly recommend!"
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="assets/user_rev_2.jpg"
+                    alt="review_photo"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Bruce Pilsner</p>
+                    <p class="review__user-date">Jan 21st, 2023</p>
+                  </div>
+                  <div class="review__rating">8.9</div>
+                </figcaption>
+              </figure>
+              <figure class="review">
+                <blockquote class="review__text">
+                  "When I saw this island from the plane I was absolutely
+                  surprised. The best place I've been in last five years!"
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="assets/user_rev_1.jpg"
+                    alt="review_photo"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">Stacey Ponarth</p>
+                    <p class="review__user-date">March 3rd, 2023</p>
+                  </div>
+                  <div class="review__rating">8.9</div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">Show all<span>&rarr;</span></button>
+            </div>
+          </div>
+          <div class="cta">
+            <h2 class="cta__book-now">
+              Good news, we have hot tours since today!
+            </h2>
+            <button class="btn">
+              <span class="btn__visible">Book now!</span
+              ><span class="btn__invisible">Only 5 tours left!</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

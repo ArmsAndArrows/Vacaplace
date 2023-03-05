@@ -1,0 +1,63 @@
+:root {
+    --color-blue-primary: hsl(217, 86%, 48%);
+    --color-blue-light: rgb(185, 212, 230);
+    --color-blue-med: #447799;
+    --color-blue-dark: rgb(0, 85, 128);
+    --color-blue-ultra-dark: rgb(38, 43, 58);
+
+    --color-sandy-beige: #f5deb3;
+    --color-pale-yellow: #f0e9d1;
+    --color-white: rgb(255, 255, 255);
+
+    --color-gray-light-1: rgb(240, 240, 240);
+    --color-gray-light-2: rgb(230, 230, 230);
+    --color-gray-light-3: rgb(210, 210, 210);
+    --color-gray-light-4: rgb(150, 150, 150);
+
+    --color-gray-dark: rgb(70, 70, 70);
+    --color-gray-ultra-dark: rgb(30, 40, 40);
+
+    --color-accent: rgb(247, 72, 28);
+
+    --color-shadow-bright: rgba(10, 10, 10, 0.15);
+    --color-shadow-dark: rgba(10, 10, 10, 0.3);
+
+    --line: 1px solid var(--color-gray-light-3);
+}
+
+$bp-largest: 75em; ///1200px
+$bp-large: 68.75em; ///1100px
+$bp-medium: 56.25em; ///900px
+$bp-small: 37.5em; ///600px
+$bp-smallest: 31.25em; ///500px
+$bp-ultrasmall: 20.625em; ///330px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    color: var(--color-gray-dark);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-image: url(../assets/checkered-light-emboss.png),
+        linear-gradient(150deg, var(--color-blue-light), var(--color-blue-dark));
+    background-repeat: round;
+}
